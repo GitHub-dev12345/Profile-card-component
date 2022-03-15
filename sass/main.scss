@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* Body Design Css Code */
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    margin: 150px auto;    
+    background: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg') hsl(185, 75%, 39%);
+    background-position: -100px -450px, 750px 350px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 850px, 1000px;  
+    background-attachment: fixed, fixed;
+}
+
+/* Main Container Design Css Code */
+.container{
+    max-width: 350px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: white;
+}
+
+/* Container Card Banner Css Code */
+.banner{
+    min-height: 20vh;
+    min-width: 20vw;
+    background: url('../images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Inner Card profile Css Code */
+.imgbox{
+    width: 27%;
+    min-height: 95px;
+    margin: auto;
+    margin-top: -50px;
+    background: url('../images/image-victor.jpg') no-repeat top center / cover;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+/* Card Design Css Code */
+.card{
+    height: 165px;
+    margin-top: -2px;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    h4{
+        text-align: center;
+        margin-top: 18px;
+
+        span{
+            font-size: 17px;
+            color: hsl(0, 0%, 59%);
+            font-weight: 600;
+        }
+    }
+    p{
+        text-align: center;
+        font-size: 14px;
+        color: hsl(0, 0%, 59%);
+        margin-top: 10px;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+}
+
+/* Inner Card Stats Css Code */
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.8;
+}
+
+.line{
+    opacity: 0.1;
+}
+
+.number{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10px;
+
+    p{
+        font-size: 10px;
+        font-weight: 600;
+        font-family: 'Kumbh Sans', sans-serif;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Footer Design Css Code */
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 11px;
+    margin-top: 50px;
+    word-spacing: 3px;
+
+    a{
+        cursor: pointer;
+        color: peachpuff;
+        &:hover{
+            text-decoration: none;
+            color: orange;
+        }
+    }
+}
+
+/* Responsive CSS Code */
+@media screen and (max-width: 391px) {
+    .container{
+        width: auto;
+    }    
+}
